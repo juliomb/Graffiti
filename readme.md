@@ -10,4 +10,4 @@
 #Description
 App intended to save your favorites graffiti around the city. Allows you take a photo and name them. Once saved you can see all your graffitis pinned on a map.
 
-**Working with:** MapKit, CoreLocation, ImagePickerController
+**Working with:** MapKit, CoreLocation, ImagePickerController, NSKeyedArchiver, NSCoding
