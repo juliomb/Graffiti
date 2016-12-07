@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8E822C8E1DED87D80030B04D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822C8D1DED87D80030B04D /* AppDelegate.swift */; };
-		8E822C901DED87D80030B04D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822C8F1DED87D80030B04D /* ViewController.swift */; };
 		8E822C931DED87D80030B04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E822C911DED87D80030B04D /* Main.storyboard */; };
 		8E822C951DED87D80030B04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E822C941DED87D80030B04D /* Assets.xcassets */; };
 		8E822C981DED87D80030B04D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E822C961DED87D80030B04D /* LaunchScreen.storyboard */; };
+		8E822CA11DED96E40030B04D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E822CA01DED96E40030B04D /* MapKit.framework */; };
+		8E822CA31DED99240030B04D /* GraffitiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822CA21DED99240030B04D /* GraffitiDetailViewController.swift */; };
+		8E822CA51DED9AF40030B04D /* Graffiti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822CA41DED9AF40030B04D /* Graffiti.swift */; };
+		8E822CA71DED9C9C0030B04D /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822CA61DED9C9C0030B04D /* CurrentLocationViewController.swift */; };
+		8E822CA91DEDE4E30030B04D /* GraffitiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822CA81DEDE4E30030B04D /* GraffitiManager.swift */; };
+		8E822CAB1DEF6AF30030B04D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E822CAA1DEF6AF30030B04D /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E822C8A1DED87D80030B04D /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E822C8D1DED87D80030B04D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E822C8F1DED87D80030B04D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E822C921DED87D80030B04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E822C941DED87D80030B04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E822C971DED87D80030B04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E822C991DED87D80030B04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E822CA01DED96E40030B04D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8E822CA21DED99240030B04D /* GraffitiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiDetailViewController.swift; sourceTree = "<group>"; };
+		8E822CA41DED9AF40030B04D /* Graffiti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graffiti.swift; sourceTree = "<group>"; };
+		8E822CA61DED9C9C0030B04D /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
+		8E822CA81DEDE4E30030B04D /* GraffitiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiManager.swift; sourceTree = "<group>"; };
+		8E822CAA1DEF6AF30030B04D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E822CA11DED96E40030B04D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				8E822C8C1DED87D80030B04D /* Graffiti */,
 				8E822C8B1DED87D80030B04D /* Products */,
+				8E822C9F1DED96E30030B04D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +67,25 @@
 			isa = PBXGroup;
 			children = (
 				8E822C8D1DED87D80030B04D /* AppDelegate.swift */,
-				8E822C8F1DED87D80030B04D /* ViewController.swift */,
+				8E822CA61DED9C9C0030B04D /* CurrentLocationViewController.swift */,
+				8E822CA21DED99240030B04D /* GraffitiDetailViewController.swift */,
+				8E822CAA1DEF6AF30030B04D /* ImageViewController.swift */,
 				8E822C911DED87D80030B04D /* Main.storyboard */,
 				8E822C941DED87D80030B04D /* Assets.xcassets */,
 				8E822C961DED87D80030B04D /* LaunchScreen.storyboard */,
 				8E822C991DED87D80030B04D /* Info.plist */,
+				8E822CA41DED9AF40030B04D /* Graffiti.swift */,
+				8E822CA81DEDE4E30030B04D /* GraffitiManager.swift */,
 			);
 			path = Graffiti;
+			sourceTree = "<group>";
+		};
+		8E822C9F1DED96E30030B04D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E822CA01DED96E40030B04D /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E822C901DED87D80030B04D /* ViewController.swift in Sources */,
+				8E822CA31DED99240030B04D /* GraffitiDetailViewController.swift in Sources */,
+				8E822CA71DED9C9C0030B04D /* CurrentLocationViewController.swift in Sources */,
+				8E822CA91DEDE4E30030B04D /* GraffitiManager.swift in Sources */,
+				8E822CA51DED9AF40030B04D /* Graffiti.swift in Sources */,
+				8E822CAB1DEF6AF30030B04D /* ImageViewController.swift in Sources */,
 				8E822C8E1DED87D80030B04D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
